@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Converter!</title>
+</head>
+<body>
+    <h1>Hey this is a page with stuff. Do you like it?</h1>
+    <p><%= number %>'s square root is <%= Math.sqrt(number) %> (obviously not as precise as your own calculations)</p>
+    <p><%= number %> from Celsius to Fahrenheit is <%= number * 1.8 + 32%> (susceptible to floating point chicanery)</p>
+    <p><%= number %> from Fahrenheit to Celsius is <%= (number - 32) / 1.8 %> (also susceptible to floating point shenanigans)</p>
+    <p><%= number %> is<%- number.toString() === '119' ? ' ' : ' <b>not</b> ' %>responsible for the deaths of hundreds. Hint: check random numbers to see if this is true.</p>
+</body>
+</html>
